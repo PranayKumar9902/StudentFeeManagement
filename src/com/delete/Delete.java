@@ -32,7 +32,7 @@ public class Delete extends HttpServlet{
             String rollno = request.getParameter("ROLLNO");
             PrintWriter out = response.getWriter();
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orclnew1", "C##TRAINEES_DATABASE", "system123#");
+            Connection con = DriverManager.getConnection("DBURL", "DBNAME", "PASSWORD");
             PreparedStatement st = con.prepareStatement("DELETE FROM BUNTY_STUDENTS WHERE ROLLNO = ?");
             st.setString(1, rollno);
             
