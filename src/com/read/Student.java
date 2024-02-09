@@ -5,10 +5,7 @@
  */
 package com.read;
 
-/**
- *
- * @author TR080124021
- */
+
 public class Student {
     
     String fname , lname ;
