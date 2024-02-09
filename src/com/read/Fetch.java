@@ -32,7 +32,7 @@ public class Fetch extends HttpServlet{
             PrintWriter out = response.getWriter();
             String rollno = request.getParameter("ROLLNO");
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orclnew1", "C##TRAINEES_DATABASE", "system123#");
+            Connection con = DriverManager.getConnection("DBURL", "DBNAME", "PASSWORD");
             
             PreparedStatement st = con.prepareStatement("SELECT DUE FROM BUNTY_STUDENTS WHERE ROLLNO = ?");
             st.setString(1, rollno);
