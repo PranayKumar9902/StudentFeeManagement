@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Create
-    Created on : 5 Feb, 2024, 4:38:02 PM
-    Author     : TR080124021
---%>
+
 <%@ page import="javax.servlet.http.HttpSession" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
