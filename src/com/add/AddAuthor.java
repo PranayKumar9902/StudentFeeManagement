@@ -30,7 +30,7 @@ public class AddAuthor extends HttpServlet{
             String pass = request.getParameter("pass");
             
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orclnew1", "C##TRAINEES_DATABASE", "system123#");
+            Connection con = DriverManager.getConnection("DBURL", "DBNAME", "PASSWORD");
             PreparedStatement st = con.prepareStatement("INSERT INTO BUNTY_AUTHORS VALUES(?,?)");
             st.setString(1,uname);
             st.setString(2, pass);
