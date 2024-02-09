@@ -1,8 +1,4 @@
-<%-- 
-    Document   : feepay
-    Created on : 6 Feb, 2024, 12:32:05 PM
-    Author     : TR080124021
---%>
+
 <%@ page import="javax.servlet.http.HttpSession" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
