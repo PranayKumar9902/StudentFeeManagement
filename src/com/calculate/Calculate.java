@@ -39,7 +39,7 @@ public class Calculate extends HttpServlet{
             }else{
                 ans = newbal+"";
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orclnew1", "C##TRAINEES_DATABASE", "system123#");
+                Connection con = DriverManager.getConnection("DBURL", "DBNAME", "PASSWORD");
                 PreparedStatement st = con.prepareStatement("UPDATE BUNTY_STUDENTS SET DUE = ? WHERE ROLLNO = ?");
                 st.setString(1, ans);
                 st.setString(2, rollno);
