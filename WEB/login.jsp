@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 5 Feb, 2024, 5:27:29 PM
-    Author     : TR080124021
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
