@@ -36,7 +36,7 @@ public class Update extends HttpServlet{
             String due = request.getParameter("DUE");
             PrintWriter out = response.getWriter();
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orclnew1", "C##TRAINEES_DATABASE", "system123#");
+            Connection con = DriverManager.getConnection("DBURL", "DBNAME", "PASSWORD");
             PreparedStatement st = con.prepareStatement("UPDATE BUNTY_STUDENTS SET FNAME = ? , LNAME = ? , CLASS = ? , DUE = ? WHERE ROLLNO = ?");
             st.setString(1, fname);
             st.setString(2, lname);
